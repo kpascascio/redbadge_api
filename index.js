@@ -8,13 +8,11 @@ const bodyParser = require('body-parser');
 require('./models/index')
 const router = require('./router');
 
-
 app.use(cors());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-
 
 // endpoints 
 router(app);
